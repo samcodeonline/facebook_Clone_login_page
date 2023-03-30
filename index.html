@@ -5,19 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/fb-fav.png" />
+    
+    
     <link rel="stylesheet" href="style.css">
-    <title>login_page</title>
+    <title>Facebook-login-signup</title>
 </head>
 
-<body>
-    <div class="container">
-        <div class="left">
-            <img src="images/facebook_logo.svg" alt="">
-            <p>Facebook helps you connect and share with the people in your life</p>
+<body class="bg-gray-200">
+    <div class="container mt-48 flex mx-auto items-center justify-center">
+        <div class="left w-1/2 mx-14">
+            <img class="w-80" src="images/facebook_logo.svg" alt="">
+            <p class="text-3xl mx-8">Facebook helps you connect and share with the people in your life</p>
         </div>
-        <div class="right">
-            <input type="text" placeholder="Email address or phone number">
-            <input type="password" placeholder="Password">
+        <div class="right flex flex-col bg-white p-8 rounded-md w-1/4 text-lg relative">
+            <input type="text" placeholder="Email address or phone number"
+                class="px-4 h-13 my-3  border border-1 border-gray-200 rounded-lg outline-blue-600">
+            <input type="password" placeholder="Password"
+                class="px-4 h-13 my-3 border border-1 border-gray-200 rounded-lg outline-blue-600">
+            <button
+                class="bg-blue-500 hover:bg-blue-700 text-white py-3 my-2 rounded-md font-bold text-xl cursor-pointer hover:underline">Log
+                In</button>
+            <span class="text-blue-600 text-center text-sm my-3 cursor-pointer">Forgotten account?</span>
+            <hr class="my-3">
+            <button
+                class="bg-green-600 hover:bg-green-700 text-white py-3 my-3 rounded-md font-bold text-xl cursor-pointer hover:underline w-fit px-4 mx-auto">Create
+                New Account</button>
+                <span class="absolute -bottom-10 text-sm "><span class="font-bold hover:underline cursor-pointer">Create a page </span>-- for celebrity, brand or business</span>
         </div>
 
     </div>
